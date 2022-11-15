@@ -1,5 +1,9 @@
 # whisper.cpp_windows
-Just an .exe that can be used for those unable to build the excellent [whisper.cpp](https://github.com/ggerganov/whisper.cpp) in Windows. Find it on the Releases page. Unzip into a folder, download the [ggml model](https://ggml.ggerganov.com/) of your choice, open up a commandline in the folder, and transcribe away!
+Just an .exe that can be used for those unable to build the excellent [whisper.cpp](https://github.com/ggerganov/whisper.cpp) in Windows. Find it on the Releases page. 
+
+Unzip into a folder, download the [ggml model](https://ggml.ggerganov.com/) of your choice, open up a commandline in the folder, and transcribe away!
+
+Example: ```main -m ggml-model-whisper-small.bin -t 4 -otxt -f file.wav```
 
 ## More Info
 [OpenAI's Whisper](https://github.com/openai/whisper) is a state of the art auto-transcription model. Unfortunately for some, it requires a GPU to be effective.
