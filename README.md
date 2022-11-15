@@ -8,7 +8,7 @@ Example: ```main -m ggml-model-whisper-small.bin -t 4 -otxt -f file.wav```
 ## More Info
 [OpenAI's Whisper](https://github.com/openai/whisper) is a state of the art auto-transcription model. Unfortunately for some, it requires a GPU to be effective.
 
-[Whisper.cpp](https://github.com/ggerganov/whisper.cpp) is an excellent port of Whisper in C++ that solves the GPU issue. It works quite well with a CPU.
+[Whisper.cpp](https://github.com/ggerganov/whisper.cpp) is an excellent port of Whisper in C++, which works quite well with a CPU, thereby eliminating the need for a GPU.
 
 Whisper.cpp is quite easy to compile on Linux & MacOS. Non-technical Windows users may struggle a bit because of a lack of Make command in Windows. Compiling with MingW or Visual Studio will solve this issue. If that sounds too complikcated for you, this exe might be useful.
 
