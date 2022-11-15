@@ -1,5 +1,5 @@
 # whisper.cpp_windows
-Just an .exe that can be used for those unable to build the excellent [whisper.cpp](https://github.com/ggerganov/whisper.cpp) in Windows. Find it on the Releases page. 
+Just an .exe that can be used for those unable to build the excellent [whisper.cpp](https://github.com/ggerganov/whisper.cpp) in Windows. Find it on the [Releases page](https://github.com/regstuff/whisper.cpp_windows/releases/download/v0.0.1/whisper.cpp_win_x64.zip). Will probably work only on x64 PCs. 
 
 Unzip into a folder, download the [ggml model](https://ggml.ggerganov.com/) of your choice, open up a commandline in the folder, and transcribe away!
 
