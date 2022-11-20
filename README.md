@@ -27,6 +27,17 @@ So, an advanced command would be something like this: `main -m ggml-model-whispe
 
 All usage options are below. For details, check out [OpenAI's Whisper](https://github.com/openai/whisper) or [Whisper.cpp's](https://github.com/ggerganov/whisper.cpp) repos.
 
+### Live Transcription
+cd into the stream folder in the commandline and run `stream -t 8 -m ..\ggml-model-whisper-tiny.bin`
+
+This will pick up the audio from the default microphone on your system, and will use 8 threads if your CPU has them (less if it doesn't).
+
+Note that this process is very CPU intensive. There is also a delay of 10 seconds between the audio and its transcription. You can change this with the --length option. `stream.exe -m ..\ggml-model-whisper-tiny.en.bin -t 8 --length 30`
+
+Setting length to 30 will have the least CPU load, and allow you to use larger models that are more accurate. The price is the delay in transcription. An 8-thread i5-8300H CPU can manage a length of 3 seconds with the tiny model and 6 seconds with the base model.
+
+### Full List of Options
+
 ```
 usage: ./main [options] file0.wav file1.wav ...
 
